@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>警告！ウイルス感染！</title>
+  <style>
+    body {
+      background-color: #ff0000;
+      color: white;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    p {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    .blink {
+      animation: blink 1s step-start 0s infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    button {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      background: white;
+      color: #ff0000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="blink">警告！</h1>
+  <p>あなたのコンピューターはウイルスに感染しています！</p>
+  <p>すぐに対処してください！</p>
+  <button onclick="alert('このメッセージはフェイクです。安心してください！')">詳細を見る</button>
+</body>
+</html>
